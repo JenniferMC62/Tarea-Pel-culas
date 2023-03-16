@@ -8,7 +8,7 @@ namespace Pelicula
     {
         //Campos
         public string? titulo;
-        public Int16 año;
+        public int16? año;
         
         
         private List<Actor> actores = new List<Actor>();
