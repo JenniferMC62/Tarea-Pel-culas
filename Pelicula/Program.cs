@@ -126,7 +126,7 @@ namespace Pelicula
     public class Actor
     {
         //Propiedades
-        public string Nombre;
+        publi string Nombre;
         public Int16 Año;
         
         
