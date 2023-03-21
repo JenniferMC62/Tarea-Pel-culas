@@ -18,8 +18,7 @@ namespace Pelicula
         //Constructores
         
         // Constructor Película
-        {
-            public Pelicula(string titulo, Int16 año, string pais, string director)
+        public Pelicula(string titulo, Int16 año, string pais, string director)
             {
                 this.titulo = titulo;
                 this.año = año;
@@ -27,10 +26,8 @@ namespace Pelicula
                 this.director = director;
                 
             }
-        }
         
         // Constructo Pelicula()
-        
         public Pelicula()
         {
             titulo = "";
@@ -136,13 +133,11 @@ namespace Pelicula
         //Constructores
         
         // Constructor Actor
-        {
             public Actor(string Nombre, Int16 Año)
             {
                 this.Nombre = Nombre;
                 this.Año = Año;
             }
-        }
 
         //Métodos 
         
@@ -219,7 +214,7 @@ namespace Pelicula
             
             foreach (Pelicula p in peliculas)
             {
-                Console.WriteLine("{0} ({1})", pelicula.GetTitulo(), pelicula.GetAño());
+                Console.WriteLine("{0} ({1})", p.GetTitulo(), p.GetAño());
             }
         }
     }
