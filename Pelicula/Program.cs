@@ -25,6 +25,7 @@ namespace Pelicula
                 this.año = año;
                 this.pais = pais;
                 this.director = director;
+                
             }
         }
         
@@ -105,7 +106,22 @@ namespace Pelicula
             Console.WriteLine($"{titulo} ({año})");
 
         }
-
+        
+        // AgregaActor(Actor actor)
+        public void AgregaActor(Actor actor)
+        {
+            actores.Add(actor);
+        }
+        
+        // ImprimeActores()
+        public void ImprimeActores()
+        {
+            Console.WriteLine("Actores de la película '{0}':", titulo);
+            foreach (Actor actor in Actores)
+            {
+                Console.WriteLine("-{0} ({1})", actor.Nombre, actor.Año);
+            }
+        }
 
     }
 
@@ -158,7 +174,7 @@ namespace Pelicula
             return Año;
         }
         
-        public void ImprimeActores()
+        public void Imprime()
         {
             Console.WriteLine($"{Nombre} ({Año})");
         }
@@ -180,6 +196,10 @@ namespace Pelicula
             p1.SetTitulo("Todo En Todas Partes Al Mismo Tiempo");
             p1.SetAño(2022);
             Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
+            p1.AgregaActor(new Actor("Michelle Yeoh", 1962)); 
+            p1.AgregaActor(new Actor("Ke Huy Quan", 1971)); 
+            
+            p1.ImprimeActores();
             
             // Objeto Pelicula p2
             Pelicula p2 = new Pelicula();
