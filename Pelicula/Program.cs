@@ -4,6 +4,7 @@ using System.Collections.Generic;
 namespace Pelicula
 {
 
+    // CLASE PELÍCULA
     public class Pelicula
     {
         //Campos Privados
@@ -11,8 +12,6 @@ namespace Pelicula
         private Int16 año;
         private string pais;
         private string director;
-        
-        
         private List<Actor> actores = new List<Actor>();
 
         
@@ -110,15 +109,56 @@ namespace Pelicula
 
     }
 
+    // CLASE ACTOR
     public class Actor
     {
         //Propiedades
-
+        private string Nombre;
+        private Int16 Año;
+        
+        
         //Constructores
-
+        
+        // Constructor Actor
+        {
+            public Actor(string Nombre, Int16 Año)
+            {
+                this.Nombre = Nombre;
+                this.Año = Año;
+            }
+        }
 
         //Métodos 
-        public void Imprime()
+        
+        // Set
+        
+        //Set Nombre
+        public void SetNombre(string Nombre)
+        {
+            this.Nombre = Nombre;
+        }
+        
+        // Set Año
+        public void SetAño(Int16 Año)
+        {
+            this.Año = Año;
+        }
+        
+        // Get
+        
+        // Get Nombre
+        public string GetNombre()
+        {
+            return Nombre;
+        }
+        
+        // Get Año
+        public Int16 GetAño()
+        {
+            return Año;
+        }
+        
+        public void ImprimeActores()
         {
             Console.WriteLine($"{Nombre} ({Año})");
         }
