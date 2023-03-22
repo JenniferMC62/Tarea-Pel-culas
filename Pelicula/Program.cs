@@ -113,11 +113,7 @@ namespace Pelicula
         // ImprimeActores()
         public void ImprimeActores()
         {
-            Console.WriteLine("Actores de la película '{0}':", titulo);
-            foreach (Actor actor in actores)
-            {
-                Console.WriteLine("-{0} ({1})", actor.Nombre, actor.Año);
-            }
+            Console.WriteLine($"{Nombre} ({Año})");
         }
 
     }
@@ -216,7 +212,6 @@ namespace Pelicula
             {
                 Console.WriteLine("{0} ({1})", p.GetTitulo(), p.GetAño());
             }
-            //
         }
 
     }
