@@ -113,8 +113,12 @@ namespace Pelicula
         // ImprimeActores()
         public void ImprimeActores()
         {
-
-        }
+         Console.WriteLine("Actores:");
+            foreach (Actor actor in actores)
+            {
+                actor.Imprime();
+            }
+}
 
     }
 
