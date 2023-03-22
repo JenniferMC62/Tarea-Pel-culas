@@ -113,10 +113,10 @@ namespace Pelicula
         // ImprimeActores()
         public void ImprimeActores()
         {
-         Console.WriteLine("Actores:");
-            foreach (Actor actor in actores)
+            Console.WriteLine("Actores:");
+             foreach (Actor actor in this.actores)
             {
-                actor.Imprime();
+                Console.WriteLine("{0} ({1})", actor.GetNombre(), actor.GetAñoNacimiento());
             }
 }
 
@@ -127,16 +127,16 @@ namespace Pelicula
     {
         //Propiedades
         public string Nombre;
-        public Int16 Año;
+        public Int16 AñoNacimiento;
         
         
         //Constructores
         
         // Constructor Actor
-            public Actor(string Nombre, Int16 Año)
+            public Actor(string Nombre, Int16 AñoNacimiento)
             {
                 this.Nombre = Nombre;
-                this.Año = Año;
+                this.AñoNacimiento = AñoNacimiento;
             }
 
         //Métodos 
@@ -149,10 +149,10 @@ namespace Pelicula
             this.Nombre = Nombre;
         }
         
-        // Set Año
-        public void SetAño(Int16 Año)
+        // Set AñoNacimiento
+        public void SetAño(Int16 AñoNacimiento)
         {
-            this.Año = Año;
+            this.AñoNacimiento = AñoNacimiento;
         }
         
         // Get
@@ -164,14 +164,14 @@ namespace Pelicula
         }
         
         // Get Año
-        public Int16 GetAño()
+        public Int16 GetAñoNacimiento()
         {
-            return Año;
+            return AñoNacimiento;
         }
         
         public void Imprime()
         {
-            Console.WriteLine($"{Nombre} ({Año})");
+            Console.WriteLine($"{Nombre} ({AñoNacimiento})");
         }
     }
 
