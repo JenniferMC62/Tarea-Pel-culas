@@ -188,11 +188,11 @@ namespace Pelicula
             
             // Objeto Pelicula p1
             Pelicula p1 = new Pelicula();
-            p1.SetTitulo("Todo En Todas Partes Al Mismo Tiempo");
-            p1.SetAño(2022);
+            p1.SetTitulo("La La Land");
+            p1.SetAño(2016);
             Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
-            Actor actor1 = new Actor("Michelle Yeoh", 1962); 
-            Actor actor2 = new Actor("Ke Huy Quan", 1971); 
+            Actor actor1 = new Actor("Ryan Gosling", 1980); 
+            Actor actor2 = new Actor("Emma Stone", 1988); 
             p1.AgregaActor(actor1);
             p1.AgregaActor(actor2);
             
