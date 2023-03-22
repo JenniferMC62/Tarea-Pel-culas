@@ -191,8 +191,10 @@ namespace Pelicula
             p1.SetTitulo("Todo En Todas Partes Al Mismo Tiempo");
             p1.SetAño(2022);
             Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
-            p1.AgregaActor(new Actor("Michelle Yeoh", 1962)); 
-            p1.AgregaActor(new Actor("Ke Huy Quan", 1971)); 
+            Actor actor1 = new Actor("Michelle Yeoh", 1962); 
+            Actor actor2 = new Actor("Ke Huy Quan", 1971)); 
+            p1.AgregaActor(actor1);
+            p1.AgregaActor(actor2);
             
             p1.ImprimeActores();
             
