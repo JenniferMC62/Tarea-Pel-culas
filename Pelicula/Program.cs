@@ -113,8 +113,7 @@ namespace Pelicula
         // ImprimeActores()
         public void ImprimeActores()
         {
-            Console.WriteLine($"{Nombre} ({Año})");
-            Console.WriteLine($"{Nombre} ({Año})");
+
         }
 
     }
